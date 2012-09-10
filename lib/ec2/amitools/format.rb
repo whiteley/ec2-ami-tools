@@ -58,7 +58,7 @@ module Format
   def Format.hex2bin(hex)
     hex = '0' + hex unless (hex.size % 2) == 0
     data = StringIO.new
-    hex.to_a.pack('H*').each {|digit| data.write(digit)}
+    hex.lines.to_a.pack('H*').each_line {|digit| data.write(digit)}
     data.string
   end
 
