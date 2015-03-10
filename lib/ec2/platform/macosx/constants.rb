@@ -16,14 +16,7 @@ module EC2
   module Platform
     module Macosx
       module Constants
-        module Bundling
-          include EC2::Platform::Base::Constants::Bundling
-          DESTINATION = '/mnt'
-        end
-        module Utility
-          OPENSSL = '/usr/bin/openssl'
-          TAR = '/usr/local/bin/gtar'
-        end
+        include EC2::Platform::Base::Constants
       end
     end
   end
