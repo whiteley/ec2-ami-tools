@@ -8,14 +8,9 @@
 # the License for the specific language governing permissions and
 # limitations under the License.
 
-#-------------------------------------------------------------------------------
-require 'ec2/platform/linux/uname'
-
 module EC2
-  module Platform
-    module Macosx
-      class Uname < EC2::Platform::Linux::Uname
-      end
-    end
+  module Common
+    SIGV2 = '2'
+    SIGV4 = '4'
   end
 end

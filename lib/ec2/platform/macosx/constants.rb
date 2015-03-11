@@ -1,4 +1,4 @@
-# Copyright 2008-2009 Amazon.com, Inc. or its affiliates.  All Rights
+# Copyright 2008-2014 Amazon.com, Inc. or its affiliates.  All Rights
 # Reserved.  Licensed under the Amazon Software License (the
 # "License").  You may not use this file except in compliance with the
 # License. A copy of the License is located at
@@ -16,14 +16,7 @@ module EC2
   module Platform
     module Macosx
       module Constants
-        module Bundling
-          include EC2::Platform::Base::Constants::Bundling
-          DESTINATION = '/mnt'
-        end
-        module Utility
-          OPENSSL = '/usr/bin/openssl'
-          TAR = '/usr/local/bin/gtar'
-        end
+        include EC2::Platform::Base::Constants
       end
     end
   end
